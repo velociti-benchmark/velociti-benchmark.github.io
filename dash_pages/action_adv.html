@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../static/images/velo.ico">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- <a class="navbar-brand" href="../dashboard.html">Dashboard</a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Project Page</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton1" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Agent
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <a class="dropdown-item" href="./agent_iden.html">Agent Identity</a>
+                            <a class="dropdown-item" href="./action_bind.html">Agent Binding</a>
+                            <a class="dropdown-item" href="./agent_coref.html">Agent CoRef</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton2" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Action
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                            <a class="dropdown-item" href="./action_adv.html">Action Adversarial</a>
+                            <a class="dropdown-item" href="./action_mod.html">Action Modifier</a>
+                            <a class="dropdown-item" href="./action_bind.html">Action Binding</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./chronology.html">Chronology</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./ivat.html">IVAT</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="alert alert-warning m-0 mb-5" role="alert">
+        Action Adversarial Test
+    </div>
+
+    <style>
+        .yellow-background {
+            background-color: #ffffcc;
+            /* Pale Yellow */
+            border: 1px solid #ccc;
+            /* Light Gray */
+            padding: 10px;
+            /* Add padding for better visual */
+        }
+    </style>
+
+    <style>
+        .green-background {
+            background-color: #ddf2d1;
+            /* Pale Green */
+            border: 1px solid #ccc;
+            /* Light Gray */
+            padding: 10px;
+            /* Add padding for better visual */
+        }
+    </style>
+
+    <style>
+        .red-background {
+            background-color: #ecaaa6;
+            /* Pale Red */
+            border: 1px solid #ccc;
+            /* Light Gray */
+            padding: 10px;
+            /* Add padding for better visual */
+        }
+    </style>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <video src="../static/velociti_samples/v_4HOgujwklBY_seg_95_105.mp4" controls muted width="100%" type="video/mp4"></video>
+                    <div class="card-body">
+                        <p class="card-text green-background">At a police station, a policeman is scowling at a man in a green jacket.</p>
+                        <p class="card-text red-background">At a police station, a policeman is smiling at a man in a green jacket.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <video src="../static/velociti_samples/v_YlF1gLpUZp8_seg_65_75.mp4" controls muted width="100%"></video>
+                    <div class="card-body">
+                        <p class="card-text green-background">On the beach, the boy in a dark shirt is walking away from the man in anger.</p>
+                        <p class="card-text red-background">On a beach, a boy in a dark shirt is chasing a man, angrily.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <video src="../static/velociti_samples/v_85A2rWA5O3o_seg_95_105.mp4" controls muted width="100%"></video>
+                    <div class="card-body">
+                        <p class="card-text green-background">In a bedroom, the dog is walking forward to get out from under the covers.</p>
+                        <p class="card-text red-background">In a bedroom, the dog is settling into the covers.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <video src="../static/velociti_samples/v_gK06H6EpKP4_seg_70_80.mp4" controls muted width="100%"></video>
+                    <div class="card-body">
+                        <p class="card-text green-background">In an office, a woman with her hair tied in a bun walks away from the table, folding her hands and thinking hard.</p>
+                        <p class="card-text red-background">In an office, a woman with her hair tied in a bun is staying at the table, deep in thought.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card">
+                    <video src="../static/velociti_samples/v_CwdGYMM2bHM_seg_150_160.mp4" controls muted width="100%"></video>
+                    <div class="card-body">
+                        <p class="card-text green-background">On a boat in the ocean, a man in a green hat is speaking from the front of the boat to a man in a light-colored shirt.</p>
+                        <p class="card-text red-background">On a boat in the ocean, a man in a green hat is rowing from the front of the boat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <video src="../static/velociti_samples/v_hw8D5KSx5p4_seg_45_55.mp4" controls muted width="100%"></video>
+                    <div class="card-body">
+                        <p class="card-text green-background">Outside a house, a girl in a short sleeve shirt is running forward many feet to intervene in a fight.</p>
+                        <p class="card-text red-background">Outside a house, a girl in a short sleeve shirt is retreating from a fight.</p>
+                    </div>
+                </div>
+            </div>            
+            
+        </div>
+    
+    </div>
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="alert alert-info mt-2" role="alert">
+                All videos presented belong to their original creators and no copyright infringement is intended. Some
+                videos may be sensitive to certain viewers.
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+
+
+</body>
+
+</html>

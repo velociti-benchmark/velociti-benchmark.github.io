@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../static/images/velo.ico">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- <a class="navbar-brand" href="../dashboard.html">Dashboard</a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Project Page</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton1" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Agent
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <a class="dropdown-item" href="./agent_iden.html">Agent Identity</a>
+                            <a class="dropdown-item" href="./action_bind.html">Agent Binding</a>
+                            <a class="dropdown-item" href="./agent_coref.html">Agent CoRef</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton2" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Action
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                            <a class="dropdown-item" href="./action_adv.html">Action Adversarial</a>
+                            <a class="dropdown-item" href="./action_mod.html">Action Modifier</a>
+                            <a class="dropdown-item" href="./action_bind.html">Action Binding</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./chronology.html">Chronology</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./ivat.html">IVAT</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="alert alert-warning m-0 mb-5" role="alert">
+        Agent Identity Test
+    </div>
+
+    <style>
+        .yellow-background {
+            background-color: #ffffcc;
+            /* Pale Yellow */
+            border: 1px solid #ccc;
+            /* Light Gray */
+            padding: 10px;
+            /* Add padding for better visual */
+        }
+    </style>
+
+    <style>
+        .green-background {
+            background-color: #ddf2d1;
+            /* Pale Green */
+            border: 1px solid #ccc;
+            /* Light Gray */
+            padding: 10px;
+            /* Add padding for better visual */
+        }
+    </style>
+
+    <style>
+        .red-background {
+            background-color: #ecaaa6;
+            /* Pale Red */
+            border: 1px solid #ccc;
+            /* Light Gray */
+            padding: 10px;
+            /* Add padding for better visual */
+        }
+    </style>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <video src="../static/velociti_samples/v_ByExQg6WGeE_seg_45_55.mp4" controls muted
+                        width="100%"></video>
+                    <div class="card-body">
+                        <p class="card-text green-background">In an office, the man in blue is comforting the boy in the
+                            black shirt.</p>
+                        <p class="card-text red-background">In an office, a woman in a colorful shirt is comforting the
+                            boy in a black shirt.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <video src="../static/velociti_samples/v_FZ65jfSwpAk_seg_45_55.mp4" controls muted
+                        width="100%"></video>
+                    <div class="card-body">
+                        <p class="card-text green-background">Outside a house, the woman with blonde hair leans on the
+                            railing to relax.</p>
+                        <p class="card-text red-background">Outside a house, the boy in white is leaning on the railing
+                            to relax.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <video src="../static/velociti_samples/v_05-e-YTw4r8_seg_110_120.mp4" controls muted
+                        width="100%"></video>
+                    <div class="card-body">
+                        <p class="card-text green-background">A man in a green flannel shirt is patting a man in a red
+                            flannel shirt on the back.</p>
+                        <p class="card-text red-background">A woman with brown hair pats the man in a red flannel shirt
+                            on the back.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <video src="../static/velociti_samples/v_QiVfqVQ5t9A_seg_0_10.mp4" controls muted
+                        width="100%"></video>
+                    <div class="card-body">
+                        <p class="card-text green-background">In the shaft, the man with the black mustache is reading
+                            the metal plate with numbers on it, which displays the text 149419568.</p>
+                        <p class="card-text red-background">In the shaft, the man wearing a blue shirt is reading the
+                            metal plate with numbers on it, which says 149419568.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <video src="../static/velociti_samples/v_bCAXuyqUJzs_seg_105_115.mp4" controls muted
+                        width="100%"></video>
+                    <div class="card-body">
+                        <p class="card-text green-background">In a bedroom, the clean-shaven man in the suit is
+                            searchingly touching underneath a mattress with his hand.</p>
+                        <p class="card-text red-background">In a bedroom, the man with a red hat is touching underneath
+                            a mattress searchingly with his hand.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <video src="../static/velociti_samples/v_96dlvQbYEds_seg_75_85.mp4" controls muted
+                        width="100%"></video>
+                    <div class="card-body">
+                        <p class="card-text green-background">While holding onto the moving car, a man in a blue shirt
+                            is choking a man in a plaid shirt.</p>
+                        <p class="card-text red-background">Holding onto the moving car, the woman in a white coat is
+                            choking him.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="alert alert-info mt-2" role="alert">
+                All videos presented belong to their original creators and no copyright infringement is intended. Some
+                videos may be sensitive to certain viewers.
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+
+
+</body>
+
+</html>
